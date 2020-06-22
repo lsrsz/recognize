@@ -67,3 +67,8 @@ class APP(QMainWindow,Ui_main_window):
             QMessageBox.critical(None,
                                  "提示!",
                                  "识别失败！")
+if __name__ == '__main__':
+    app = QApplication(sys.argv)
+    main_app = APP()
+    main_app.show()
+    sys.exit(app.exec_())
